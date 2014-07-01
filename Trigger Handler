@@ -1,0 +1,33 @@
+public with sharing class OBJECT_TriggerHandler {
+
+    private boolean m_isExecuting = false;
+    private integer BatchSize = 0;
+
+    public OBJECT_TriggerHandler (boolean isExecuting, integer size){
+        m_isExecuting = isExecuting;
+        BatchSize = size;
+    }
+    public void OnBeforeInsert(list<OBJECT> triggerNew){
+
+        OBJECT_TriggerHandler_Helper helper = new OBJECT_TriggerHandler_Helper();
+        helper.groupAndSum(triggerNew);
+    }
+    public void OnAfterInsert(list<OBJECT> triggerNew){
+
+    }
+    public void OnBeforeUpdate(list<OBJECT> triggerOld, list<OBJECT> triggerNew){
+
+    }
+    public void OnAfterUpdate(list<OBJECT> triggerOld, list<OBJECT> triggerNew){
+
+    }
+    public void OnBeforeDelete(list<OBJECT> triggerOld){
+
+    }
+    public void OnAfterDelete(list<OBJECT> triggerOld){
+
+    }
+    public void OnUndelete(list<OBJECT> triggerNew){
+
+    }
+}
