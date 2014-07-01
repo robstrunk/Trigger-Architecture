@@ -1,0 +1,18 @@
+public with sharing class OBJECT_TriggerHandler_Helper{
+
+    public void yourMethodHere(list<OBJECT> triggerNew){
+
+    }
+
+    public void yourMethodHere2(list<OBJECT> triggerNew){
+
+    }
+
+    public void yourMethodHere3(list<OBJECT> triggerNew){
+
+    }
+
+    public void yourMethodHere4(list<OBJECT> triggerNew){
+
+    }
+}
