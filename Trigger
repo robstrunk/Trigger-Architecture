@@ -5,7 +5,7 @@ trigger <NAME> on <OBJECT> (	after delete,
 				before delete,
 				before insert,
 				before update
-			){
+			   ){
 
 	OBJECT_TriggerHandler handler = new OBJECT_TriggerHandler(Trigger.isExecuting, Trigger.size);
 
